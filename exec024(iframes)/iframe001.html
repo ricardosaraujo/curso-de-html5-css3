@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iframe</title>
+    <style>
+        iframe.tam{
+            height: 400px;
+            width: 400px;
+            border: 1px dashed black;
+        }
+
+        /* Quando configurado com CSS e diretamente no arquivo html, o que prevalece configurado são as CSS e caso não tenha nenhuma configuração ficará configurado os padrões que é 300x150.
+        Deixei todas configurações como medidas de exemplos. */
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do <a href="https://www.cursoemvideo.com/" target="_blank">CursoemVideo</a> para aprender a programar</p>
+
+    <h1>Uso de iframe abaixo</h1>
+
+    O tamanho padrão de um iframe é de 300 x 150
+
+    <p>Acessando o site do
+        
+    <iframe src="https://www.cursoemvideo.com/" frameborder="0" width="500" height="500" scolling="no">
+        <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a>
+        <!-- O link só será mostrado a opção clicavel no navegador caso o mesmo não seja compátivel com iframe, como por exemplo em alguns dispositivos móveis. -->
+        <!--
+            A função 
+            scolling="no" scolling="yes" scolling="auto"
+            serve para eliminar a barra de rolagem com o NO, colocar a barra de rolagem mesmo que o conteúdo nõa necessite com YES e no AUTO fica por conta do navegador descidir.
+            No caso não está funcionando pq o navegador não reconheceu a função.
+        -->
+    </iframe>
+    
+    para aprender a programar</p><br>
+
+    <p>
+        O site do <iframe src="https://www.google.com/" frameborder="0">
+            <a href="https://www.google.com/" target="_blank">Google</a>
+        </iframe> também é muito legal, pena que não funciona detro do iframe!
+        <!-- Exitem alguns sites que usam proteção para não serem exibidos em iframe, como por exemplo o site do google demonstrado acima. -->
+    </p><br>
+    
+    <p>
+        O repositório do Guanabara
+
+        <iframe class="tam" src="https://gustavoguanabara.github.io" frameborder="0">
+            <a href="https://gustavoguanabara.github.io" target="_blank">no GitHub</a> <!-- O link só será mostrado a opção clicavel no navegador caso o mesmo não seja compátivel com iframe, como por exemplo em alguns dispositivos móveis. -->
+        </iframe>
+
+        também é bem legal!
+    </p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- Para desligar a autosugestão de nome ou dados de um formulário é só colocar a função autocomplete "off" -->
+    <!-- A função label é extremamente importante para informar ao html que a caixa de dado está relacionada ao dado solicitado -->
+    <!-- A função method "post" serve para esconder os dados da cara do usuário junto ao link do site, porém não é a forma mais correta de escoder os dados, existem formas corretas com segurança para isso como o https -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

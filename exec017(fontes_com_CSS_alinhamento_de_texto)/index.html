@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+         h1{
+            font: italic bolder 3em 'work Sans', Arial, Helvetica, sans-serif;
+
+            /* forma simples acima e forma mais complexa abaixo */
+
+            /* font-family: 'work Sans', Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            text-decoration: underline;
+            font-size: 2em; */
+
+            /* shorthand font (uma mãozinha de como simplificar todas as declarações de formatação de texto em uma única linha)
+            Porém tem de ser na seguinte ordem -->
+
+            --> font-style -> font-weight -> font-size -> font-family */
+        }
+
+        h2{
+            font: bolder 2em 'work Sans';
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1em;
+            
+            /* Medidas Absolutas
+            cm, mm, in(polegadas), px, pt(ponto), pc(paica)
+            
+            Medias Relativas
+            em(relativa a altura da letra M da fonte), 
+            ex(relativo a altura da letra X da fonte),
+            rem(relativo a altura da letra M conf a fonte config no body),
+            Vw(relativo ao tamanho largura da tela),
+            Vh(relativo ao tamanho altura da tela),
+            %(porcentagem da tela)
+            16px geralmente é = 1em
+            Recomendação para fontes é medidas PX e EM
+            */
+            
+            /* weight(peso) width(largura) height(altura) */
+        }       
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati pariatur amet rem aperiam perspiciatis qui! Rerum, fugiat! Magni inventore, facere quo eveniet suscipit illo quis delectus maxime, amet alias at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur soluta unde sed in illum perferendis molestiae, ab sunt nobis nostrum laborum voluptatibus quibusdam dolor ducimus autem iure necessitatibus repudiandae temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum iste pariatur, eaque quam neque culpa excepturi expedita est ut, nam in temporibus animi numquam laborum. Cupiditate incidunt aspernatur laboriosam?
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis magnam obcaecati iusto dicta modi natus minus quam. Itaque voluptate ad doloribus nisi rem voluptatem inventore odio, doloremque iusto impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt perferendis tempora rem aliquid harum hic ratione iusto labore magnam. Quaerat quia, omnis beatae iste natus repudiandae nisi aut expedita?
+    </p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ad, ducimus, quisquam dolore vero, assumenda eaque architecto impedit iure deserunt veritatis similique? Dolor id consequuntur suscipit iusto mollitia cumque ab! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio pariatur magni accusamus alias neque! Earum, molestias. Est ratione magnam ipsum itaque ad optio molestiae, rerum totam error eveniet in alias?
+    </p>
+</body>
+</html>

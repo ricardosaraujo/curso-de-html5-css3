@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>
+        Abaixo você verá uma imagem de acordo com o tamanho do seu navegador, seja ele celular, tablet, computador ou até mesmo uma tela mais ampla como uma TV.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/img-passaro-flexivel-pequena.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/img-passaro-flexivel-media.jpg" type="image/png">
+        <img src="img/img-passaro-flexivel-grande.jpg" alt="imagem flexível">
+    </picture>
+</body>
+</html>

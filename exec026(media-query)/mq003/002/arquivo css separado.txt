@@ -1,0 +1,1 @@
+Aqui os estilos para modo retrato e modo paisagem estão em um CSS separado, porém em apenas um arquivo de CSS.

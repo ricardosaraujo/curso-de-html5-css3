@@ -1,0 +1,1 @@
+aqui a media query está dentro do html, porém achei que ficou um pouco bagunçado

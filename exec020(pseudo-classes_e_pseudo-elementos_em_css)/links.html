@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+        
+        #  = id
+        .  = class
+        :  = pseudo-classe
+        :: = pseudo-element
+        >  = clildren (filho) 
+        :nth-child(2n) exemplo feito no exec023 (tabelas em html) "essa pseudo-classe serve para fazer linhas zebradas em tabelas, o numero 2n pode ser 3,4,5 e assim por diante dependendo de quantas linhas eu quero pular para colocar uma cor"
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkgray;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: blueviolet;
+        }
+
+        .especial{
+            background-color: rgb(247, 194, 129);
+        }
+
+        .especial::before{
+            content: '➣';
+        }
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: #a1a1a186;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>        
+        <li><a href="https://github.com/" target="_blank">Repositório GiHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCeSZFAOtUYcYq3OXndT61dg" class="especial" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.google.com.br/maps/@-23.6575169,-46.7575315,15z" target="_blank">Google Maps</a></li>
+    </ul>
+</body>
+</html>

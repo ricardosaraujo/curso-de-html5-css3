@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>
+        Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no gitHub</a>
+    </p>
+    <p>
+        Você também pode acessar o meu<a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external"> canal gratuito no YouTube</a> <!-- A função (target="_blank" rel="external") serve
+        para abrir o link externo em uma nova janela e o cliente poder voltar ao seu site -->
+    </p>
+    <h1>Usando links internos</h1>
+    <p>
+        Esta é a primeira página do site. Se você quiser pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a>
+        <!-- Essa função (rel="next") serve para criar uma semântica para os mecânismos
+        de busca acharem com maior facilidade seu site como por ex: Google -->
+    </p>
+    <p>
+        Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a>
+    </p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Livro/Teste PDF.pdf" download="meulivro.pdf">Baixar o livro em PDF</a></li>
+        <li><a href="Livro/Teste PDF.zip" download="meulivro.pdf" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

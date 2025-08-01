@@ -1,0 +1,1 @@
+Aqui os estilos para modo retrato e modo paisagem estão em CSS's separado, uma forma bem mais organizada

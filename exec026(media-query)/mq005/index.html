@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Bem vindo</h1>        
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="#">Minhas redes sociais</a></li>
+                <li><a href="#">Apreoveite sua viagem</a></li>
+                <li><a href="#">Como você pode me ajudar</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Sobre mim</h2>
+            <img src="imagens/IMG_20201118_103440_208.jpg" alt="foto">
+            <p>
+                Prazer, sou Ricardo.
+            </p>
+            <p>
+                Hoje sou motorista de app, buscando um sonho na área de tecnologia.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis saepe, quibusdam laudantium unde sit dignissimos perspiciatis necessitatibus culpa, mollitia quod porro odio quisquam ipsum laboriosam reprehenderit vitae optio assumenda illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum consectetur accusantium, at, molestias impedit aperiam eveniet esse sit asperiores ullam tempora debitis porro, tempore repellendus eos distinctio iure inventore.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut quam voluptatum labore ipsam dolorem ullam quae ea! Nobis facilis id exercitationem! Cumque cupiditate unde tempore ullam ipsum repellendus. Ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et doloribus nam cum quidem minima ut iste temporibus autem, natus quaerat a odit perspiciatis maiores amet molestias illo, veritatis sequi! Voluptatum!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eius. Omnis dolores repellat officia eum consequuntur, ipsa, alias repellendus autem in laudantium harum. Porro harum illum consequuntur provident officiis consectetur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quaerat alias! Fuga similique facilis quae. Animi doloremque maiores distinctio est ex quasi deserunt, sequi, enim excepturi quae suscipit sed repellendus.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }            
+        }
+    </script>
+</body>
+</html>
